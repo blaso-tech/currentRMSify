@@ -356,7 +356,7 @@ function HowItWorksSection() {
 
               {/* Current RMS output */}
               <div className="flex items-center gap-3 px-6 py-4 border border-zinc-200 bg-white rounded">
-                <img src="/images/currentrms-logo.png" alt="Current RMS" className="h-8 w-auto" />
+                <div className="h-8 w-8 bg-red-600 rounded flex items-center justify-center text-white font-bold text-sm">C</div>
                 <div className="text-left">
                   <span className="font-medium block">Current RMS</span>
                   <span className="text-zinc-500 text-xs">Opportunity updated</span>
