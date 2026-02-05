@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .header { fill: #f8fafc; }
+      .border { stroke: #e2e8f0; stroke-width: 1; fill: none; }
+      .title { font-family: system-ui, sans-serif; font-size: 12px; fill: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+      .label { font-family: system-ui, sans-serif; font-size: 11px; fill: #94a3b8; }
+      .value { font-family: system-ui, sans-serif; font-size: 13px; fill: #1e293b; }
+      .section-title { font-family: system-ui, sans-serif; font-size: 11px; fill: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+      .remark { font-family: system-ui, sans-serif; font-size: 11px; fill: #475569; }
+      .badge { fill: #14b8a6; }
+      .badge-text { font-family: system-ui, sans-serif; font-size: 10px; fill: white; font-weight: 600; }
+      .source-badge { fill: #f59e0b; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="900" height="500" rx="8"/>
+  <rect class="border" x="0.5" y="0.5" width="899" height="499" rx="8"/>
+  
+  <!-- Header -->
+  <rect class="header" width="900" height="50" rx="8"/>
+  <rect x="0" y="42" width="900" height="8" fill="#f8fafc"/>
+  <line x1="0" y1="50" x2="900" y2="50" stroke="#e2e8f0"/>
+  
+  <!-- Title -->
+  <text x="24" y="32" class="title">DETAILS</text>
+  
+  <!-- Source Badge -->
+  <rect class="source-badge" x="800" y="16" width="80" height="22" rx="4"/>
+  <text x="840" y="31" class="badge-text" text-anchor="middle">VIA EMAIL</text>
+  
+  <!-- Main Content Grid -->
+  <!-- Left Column - Details -->
+  <g transform="translate(24, 70)">
+    <text class="label" y="0">Name</text>
+    <text class="value" y="18">ACME Events - Hire Request - 20260215-0847</text>
+    
+    <text class="label" y="50">Status</text>
+    <rect class="badge" x="0" y="58" width="70" height="20" rx="4"/>
+    <text class="badge-text" x="35" y="72" text-anchor="middle">Accepted</text>
+    
+    <text class="label" y="100">Planning Period</text>
+    <text class="value" y="118">15/02/2026 09:00 - 16/02/2026 23:00</text>
+    
+    <text class="label" y="150">Source</text>
+    <text class="value" y="168">Email Enquiry → Rentmanify</text>
+  </g>
+  
+  <!-- Right Column - Applicant -->
+  <g transform="translate(550, 70)">
+    <text class="section-title" y="0">APPLICANT</text>
+    
+    <text class="label" y="30">Company</text>
+    <text class="value" y="48">ACME Events Pty Ltd</text>
+    
+    <text class="label" y="80">Contact</text>
+    <text class="value" y="98">John Smith</text>
+    
+    <text class="label" y="130">Email</text>
+    <text class="value" y="148">john@████████.com.au</text>
+    
+    <text class="label" y="180">Address</text>
+    <text class="value" y="198">123 ████ Street</text>
+    <text class="value" y="216">Melbourne, VIC 3000</text>
+  </g>
+  
+  <!-- Divider -->
+  <line x1="24" y1="260" x2="520" y2="260" stroke="#e2e8f0"/>
+  
+  <!-- Equipment Section -->
+  <g transform="translate(24, 280)">
+    <text class="section-title" y="0">EQUIPMENT</text>
+    
+    <text class="label" y="30">═══ HIRE / RENTAL ═══</text>
+    <text class="value" y="55">🏢 Brand: ACME Events</text>
+    <text class="value" y="75">👤 Customer: John Smith</text>
+    <text class="value" y="95">📍 Venue: Melbourne Convention Centre</text>
+    
+    <text class="label" y="125">═══ EQUIPMENT REQUESTED ═══</text>
+    <text class="value" y="150">📦 4x Cold Spark Machine with Controller</text>
+    <text class="value" y="170">📦 2x CO2 Jet with Hose and Fittings</text>
+    
+    <text class="label" y="200">═══ SPECIAL REQUIREMENTS ═══</text>
+    <text class="value" y="225">📋 Setup required by 2PM Saturday</text>
+  </g>
+  
+  <!-- Remark Section -->
+  <g transform="translate(550, 280)">
+    <text class="section-title" y="0">REMARK</text>
+    <rect x="0" y="15" width="320" height="180" fill="#f8fafc" rx="4"/>
+    <text class="remark" y="35" x="10">═══ ACME Events Hire Request ═══</text>
+    <text class="remark" y="55" x="10">Customer: john@████████.com.au</text>
+    <text class="remark" y="75" x="10">Event: Corporate Gala Dinner</text>
+    <text class="remark" y="95" x="10">Date: 15-16 Feb 2026</text>
+    <text class="remark" y="115" x="10">Venue: Melbourne Convention Centre</text>
+    <text class="remark" y="145" x="10">Note: Client requests pyro for</text>
+    <text class="remark" y="165" x="10">keynote speaker entrance.</text>
+    <text class="remark" y="185" x="10">Tags: hire, fx, corporate</text>
+  </g>
+</svg>
