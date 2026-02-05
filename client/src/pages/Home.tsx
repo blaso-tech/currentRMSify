@@ -15,9 +15,13 @@
  * 9. WHY CURRENTRMSIFY - Wedding fireworks background (closing statement)
  *
  * CTA Psychology:
- * - Header: Solid teal (proceed, navigate)
- * - Hero: Solid orange (pause, attention)
- * - Form submit: Solid teal (proceed with action)
+ * - Header: Lime green (proceed, navigate) - matches "RMS" in logo
+ * - Hero: Solid orange (pause, attention) - matches logo connection point
+ * - Form submit: Lime green (proceed with action)
+ *
+ * Accent Colors:
+ * - Sky/Cyan blue (sky-400) for eyebrow text, checkmarks, links - matches logo top link
+ * - Orange kept for problem callouts and hero CTA
  *
  * NO ROADMAP SECTION - This is infrastructure, not a feature product.
  */
@@ -46,10 +50,10 @@ export default function Home() {
                 CurrentRMSify
               </span>
             </a>
-            {/* Solid teal CTA - proceed/navigate */}
+            {/* Lime green CTA - proceed/navigate */}
             <a
               href="#contact"
-              className="px-5 py-2.5 text-sm font-medium text-white rounded-md transition-all bg-teal-500 hover:bg-teal-600"
+              className="px-5 py-2.5 text-sm font-medium text-zinc-900 rounded-md transition-all bg-lime-500 hover:bg-lime-400"
             >
               Request Access
             </a>
@@ -152,7 +156,7 @@ function HeroSection() {
 
       <div className="container relative z-10">
         <div className="max-w-3xl">
-          <p className="text-sm font-medium text-teal-400 uppercase tracking-widest mb-4">BUILT FOR CURRENT RMS OPERATORS</p>
+          <p className="text-sm font-medium text-sky-400 uppercase tracking-widest mb-4">BUILT FOR CURRENT RMS OPERATORS</p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight text-white">
             Why are you still reconciling sales by hand?
           </h1>
@@ -164,15 +168,15 @@ function HeroSection() {
           {/* Hero bullets */}
           <ul className="mt-8 space-y-2 text-gray-300">
             <li className="flex items-center gap-2">
-              <span className="text-teal-400">—</span>
+              <span className="text-sky-400">—</span>
               <span>No CSVs</span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-teal-400">—</span>
+              <span className="text-sky-400">—</span>
               <span>No end-of-day stock corrections</span>
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-teal-400">—</span>
+              <span className="text-sky-400">—</span>
               <span>No "Current is still the master" mental gymnastics</span>
             </li>
           </ul>
@@ -283,7 +287,7 @@ function WhatCurrentRMSifyDoesSection() {
             <ul className="mt-8 space-y-4">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-teal-400 mt-0.5 shrink-0" />
+                  <Check className="h-5 w-5 text-sky-400 mt-0.5 shrink-0" />
                   <span className="text-base text-gray-200">{feature}</span>
                 </li>
               ))}
@@ -342,7 +346,7 @@ function HowItWorksSection() {
               <ArrowDown className="h-6 w-6 text-zinc-400 md:hidden" />
 
               {/* CurrentRMSify */}
-              <div className="flex items-center gap-3 px-6 py-4 border-2 border-teal-500 bg-white rounded-lg">
+              <div className="flex items-center gap-3 px-6 py-4 border-2 border-sky-500 bg-white rounded-lg">
                 <img src="/images/currentrmsify-icon.png" alt="CurrentRMSify" className="h-8 w-auto rounded" />
                 <span className="font-semibold">CurrentRMSify</span>
               </div>
@@ -450,7 +454,7 @@ function SolutionSection() {
             <ul className="mt-10 space-y-4">
               {antiPatterns.map((pattern, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-teal-400 mt-0.5 shrink-0" />
+                  <Check className="h-5 w-5 text-sky-400 mt-0.5 shrink-0" />
                   <span className="text-base text-gray-200">{pattern}</span>
                 </li>
               ))}
@@ -547,7 +551,7 @@ function FounderSection() {
                 If you're happy exporting CSVs and hoping for the best, this isn't for you.
               </p>
               <p className="text-white">
-                If you're tired of reconciling sales by hand, <a href="#contact" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">request access</a> — and tell me where it hurts.
+                If you're tired of reconciling sales by hand, <a href="#contact" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">request access</a> — and tell me where it hurts.
               </p>
             </div>
 
@@ -581,7 +585,7 @@ function FounderSection() {
                   <p className="text-xl text-white font-semibold">Luke Fenech</p>
 
                   {/* Title */}
-                  <p className="text-sm text-teal-400 font-mono tracking-wide mt-1">Chaos Engineer</p>
+                  <p className="text-sm text-sky-400 font-mono tracking-wide mt-1">Chaos Engineer</p>
 
                   {/* Proof line */}
                   <p className="text-xs text-zinc-500 mt-2">Founder, BLASO Technology · Director, BLASO Pyrotechnics</p>
@@ -651,7 +655,7 @@ function ContactSection() {
         <div className="container">
           <div className="max-w-2xl mx-auto">
             <div className="text-center">
-              <Check className="h-12 w-12 text-teal-500 mx-auto" />
+              <Check className="h-12 w-12 text-lime-500 mx-auto" />
               <h2 className="mt-6 text-2xl md:text-3xl font-semibold tracking-tight">
                 Request received
               </h2>
@@ -759,7 +763,7 @@ function ContactSection() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 placeholder="Stock drift? End-of-day exports? Sales items not matching? Include rough order volume if relevant."
-                className="w-full px-3 py-3 border border-zinc-200 rounded-md text-sm resize-none focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                className="w-full px-3 py-3 border border-zinc-200 rounded-md text-sm resize-none focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"
               />
             </div>
 
@@ -767,10 +771,10 @@ function ContactSection() {
               <p className="text-sm text-red-600">{error}</p>
             )}
 
-            {/* Solid teal submit button - proceed with action */}
+            {/* Lime green submit button - proceed with action */}
             <button
               type="submit"
-              className="h-12 px-8 text-base font-medium text-white rounded-md transition-all w-full md:w-auto disabled:opacity-50 bg-teal-500 hover:bg-teal-600"
+              className="h-12 px-8 text-base font-medium text-zinc-900 rounded-md transition-all w-full md:w-auto disabled:opacity-50 bg-lime-500 hover:bg-lime-400"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Submitting..." : isSubmitted ? "Request received. We'll review fit." : "Request Access"}
@@ -817,7 +821,7 @@ function WhySection() {
             <div className="mt-10 pt-8 border-t border-zinc-700">
               <a
                 href="#contact"
-                className="inline-flex items-center px-8 py-4 text-base font-medium text-white rounded-md transition-all bg-teal-500 hover:bg-teal-600"
+                className="inline-flex items-center px-8 py-4 text-base font-medium text-zinc-900 rounded-md transition-all bg-lime-500 hover:bg-lime-400"
               >
                 Request Access
                 <ArrowRight className="ml-2 h-4 w-4" />
